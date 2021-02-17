@@ -51,7 +51,7 @@ client.on("message", message => {
       );
       break;
 
-    case "<@652999772122120202>":
+    case "<@790600594838257696>":
       message.channel.send("فــەرمـــوو    ");
   }
 });
@@ -63,8 +63,8 @@ client.on("message", msg => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "reklam") {
-    msg.reply("** farmw  https://discord.gg/bnMJzry ❤**");
+  if (msg.content === "Reklam") {
+    msg.reply("** farmw  https://discord.gg/99KsGZHrsv**");
   }
 });
 
@@ -75,14 +75,14 @@ client.on("message", msg => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "222") {
-    msg.reply("**hawl dawa **");
+  if (msg.content === "mama") {
+    msg.reply("**bale braza **");
   }
 });
 
 client.on("message", msg => {
-  if (msg.content === "abo") {
-    msg.reply("**<@652999772122120202> xoy chwabt adatawa **");
+  if (msg.content === "Slaw") {
+    msg.reply("**<@790600594838257696> xoy chwabt adatawa **");
   }
 });
 
