@@ -418,6 +418,15 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "girl gif")) {
     let girl = [
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585870535852073/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811586874183385108/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811586882348908574/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585909534883850/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585845017444372/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585887241502761/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585933559464016/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585934969405460/image0.gif",
+      "https://cdn.discordapp.com/attachments/792035229505945621/811585843332513792/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804968189892755456/image2-1.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804968223577604126/gif472.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804968231794245642/rexsin_212.gif",
