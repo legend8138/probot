@@ -1017,6 +1017,12 @@ client.on("message", message => {
   }
 });
 
+ | [invite](${'https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot'}) |
+`);
+    message.channel.sendEmbed(embed);
+  }
+});
+
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/sad gif")) {
     let sads = [
