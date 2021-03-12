@@ -499,7 +499,7 @@ client.on("message", message => {
           }
         }
       })
-    .setColor("RANDOM")
+   
       .catch(e => {
         client.log.error(e);
       });
