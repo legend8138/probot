@@ -6,7 +6,7 @@ client.on("ready", () => {
   console.log(
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
-  let statuses = ['NAQEB is Here #7574','peryamلەبێگانەیەکەوە بووی بە ھەموو کەسم','ژیانم لە کەسێکدایە',' بوونت بۆمن شانازیە ']
+  let statuses = ['HELL is Here #7574','','','  ']
     
   
    
