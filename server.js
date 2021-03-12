@@ -6,7 +6,7 @@ client.on("ready", () => {
   console.log(
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
-  let statuses = ['HELL is Here #7574',' /help ','','  ']
+  let statuses = ['HELL is Here #7574',' /help ','MODIRATOR','GIF']
     
   
    
@@ -936,7 +936,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "help") {
+  if (message.content === prefix + "/help") {
     var addserver = `https://discord.gg/99KsGZHrsv`;
     var SUPPORT = `https://discord.gg/99KsGZHrsv`;
     var website = `https://black-bot-html.glitch.me/`;
@@ -950,42 +950,42 @@ client.on("message", message => {
       .setColor("RANDOM").setDescription(` 
     
 =========================
-🌉|avatar
+🌉| /avatar
 =========================
-🛠|p
+🛠| /p
 =========================
-🔇|mv
-🔊|unmv
+✔| /info
 =========================
-✔|info
+❄| /about
 =========================
-❄|about
+📝| /rooms
 =========================
-📝|rooms
+🔒| /lock
+🔓| /unlock
 =========================
-🔒|lock
-🔓|unlock
+💎| /id
 =========================
-💎|id
+🛫| /ban
+🛬| /unban
 =========================
-🛫|ban
-🛬|unban
+🕐| /date
 =========================
-🕐|date
+😅| /meme
+🎴| /boomb
 =========================
-😅|meme
-🎴|boomb
+🌝| /man gif
+🦄| /girl gif
 =========================
-🌝|man gif
-🦄|girl gif
+💔| /sad gif
+❤| /love gif
 =========================
-💔|sad gif
-❤|love gif
+🔕| /deafend
+🔉| /undeafend
 =========================
-🔕|deafend
-🔉|undeafend
+🔇| /mute
+🔊| /unmute
 =========================
-🥶|count
+🥶| /count
 =========================
 
 
@@ -1047,7 +1047,7 @@ client.on("message", message => {
       member.setDeaf(true).catch(console.error);
       if (!message.member.hasPermission("DEAFEN_MEMBERS"))
         return message.channel
-          .sendMessage("**You dont have DEAFEN_MEMBER**❌ ")
+          .sendMessage("**You can't DEAFEN_MEMBER**❌ ")
           .then(m => m.delete(5000));
     };
 
