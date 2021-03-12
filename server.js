@@ -6,7 +6,7 @@ client.on("ready", () => {
   console.log(
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
-  let statuses = ['HELL is Here #7574',' /help ','MODIRATOR','GIF']
+  let statuses = ['HELL is Here #0304',' /help ','MODIRATOR','GIF']
     
   
    
