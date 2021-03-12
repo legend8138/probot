@@ -1011,7 +1011,7 @@ client.on("message", message => {
 
 
 
- | [ Server Support](${SUPPORT}) |
+ | [Server Support](${'https://discord.gg/9jyZWX4Fmc'}) |
 `);
     message.channel.sendEmbed(embed);
   }
