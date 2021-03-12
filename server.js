@@ -719,7 +719,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "mv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
-        .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
+        .sendMessage("**you don't have mute permission**❌ ")
         .then(m => m.delete(5000));
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
       return message
