@@ -13,15 +13,13 @@ client.on("ready", () => {
  
   ;
 
-  setInterval(function() {
-    let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
-    client.user.setActivity(STREAMING, {
-      type: "STREAMING",
-      url: "https://www.twitch.tv/faith"
-    });
-  }, 2000);
-});
 
+client.on("ready", () => {
+    console.log(`${client.user.username} ready!`)
+  client.user.setActivity(`  /help  ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
+   
+})
+  
 client.on("message", async message => {
   if (message.content.toLowerCase() === prefix + "p") {
     message.channel.startTyping();
