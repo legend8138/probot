@@ -417,6 +417,7 @@ client.on("message", message => {
 };
     
     let man = [
+      "https://media.giphy.com/media/l4pT1r2ayYtPLc0PS/giphy.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870817351368734/5-2.gif",
@@ -432,7 +433,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif",
-      "https://th.bing.com/th/id/R36d5ddbf74c52ca08cccf2e4aef91912?rik=oFv3bf72Sj%2bxHw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f34800000%2fman-of-steel-gifs-superman-34811667-325-290.gif&ehk=3zsK5RoMFXUN0lMX9lUp3gSxm798703nM8MXdbMz6Gw%3d&risl=&pid=ImgRaw",
+      "",
     ];
 
     message.channel
