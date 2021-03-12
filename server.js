@@ -64,7 +64,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Reklam") {
-    msg.reply("** farmw  https://discord.gg/99KsGZHrsv**");
+    msg.reply("** farmw  https://discord.gg/9jyZWX4Fmc**");
   }
 });
 
