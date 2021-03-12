@@ -1222,4 +1222,4 @@ client.on("message", message => {
 
 // Events
 
-client.login("mfa.");
+client.login("ODEzMzIxMjI0OTY4ODYzNzY2.YDNnHA.eumbmj9PxFR31MIzet4-e4sJ4kw");
