@@ -452,7 +452,19 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/girl gif")) {
+  if (message.content.startsWith(prefix + "/")) {
+    exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif girl','girl gif','gifgirl','girlgif','girl'],
+
+  permLevel: 0
+
+};
+
     let girl = [
       "https://cdn.discordapp.com/attachments/792035229505945621/811585870535852073/image0.gif",
       "https://cdn.discordapp.com/attachments/792035229505945621/811586874183385108/image0.gif",
@@ -480,12 +492,14 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} GIRL GIFS `,
+          description: `${message.author.username} GIRL `,
+
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
         }
       })
+    .setColor("RANDOM")
       .catch(e => {
         client.log.error(e);
       });
