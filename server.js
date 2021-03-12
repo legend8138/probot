@@ -72,7 +72,7 @@ client.on("message", message => {
       );
       break;
 
-    case "<@790600594838257696>":
+    case "<@758476332098650152>":
       message.channel.send("فــەرمـــوو    ");
   }
 });
@@ -260,7 +260,7 @@ client.on("message", message => {
   }
 });
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "websay")) {
+  if (message.content.startsWith(prefix + "/websay")) {
     const args = message.content.substring(prefix.length).split(" ");
 
     message.delete();
