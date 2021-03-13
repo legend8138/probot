@@ -388,7 +388,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/M")) {
+  if (message.content.startsWith(prefix + "/man")) {
     
     exports.conf = {
 
