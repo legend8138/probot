@@ -96,7 +96,7 @@ client.on("message", msg => {
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + "mov")) {
+  if (message.content.startsWith(prefix + "/move")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
@@ -146,7 +146,7 @@ client.on("message", message => {
 
 // ======== { • moveall • }======== //
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "moveall")) {
+  if (message.content.startsWith(prefix + "/moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
