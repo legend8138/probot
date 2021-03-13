@@ -377,7 +377,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/m")) {
+  if (message.content.startsWith(prefix + "/M")) {
     
     exports.conf = {
 
@@ -385,7 +385,7 @@ client.on("message", message => {
 
   guildOnly: false,
 
-  aliases: ['gif man','man gif','gifman','mangif','man'],
+  aliases: ['gif man','man gif','gifman','mangif','man','Man'],
 
   permLevel: 0
 
@@ -427,14 +427,14 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/g")) {
+  if (message.content.startsWith(prefix + "/G")) {
     exports.conf = {
 
   enabled: true,
 
   guildOnly: false,
 
-  aliases: ['gif girl','girl gif','gifgirl','girlgif','girl'],
+  aliases: ['gif girl','girl gif','gifgirl','girlgif','girl','Girl'],
 
   permLevel: 0
 
@@ -482,7 +482,19 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "sad gif")) {
+  if (message.content.startsWith(prefix + "S")) {
+       exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif sad','sad gif','gifsad','sadgif','sad','Sad'],
+
+  permLevel: 0
+
+};
+    
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -514,7 +526,19 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "love gif")) {
+  if (message.content.startsWith(prefix + "C")) {
+           exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif couple','couple gif','gifcouple','couplegif','couple','Couple'],
+
+  permLevel: 0
+
+};
+   
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -538,7 +562,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  Love photos  `,
+          description: `${message.author.username} :heart:  COUPLE GIF  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -551,7 +575,7 @@ client.on("message", message => {
 });
 
 client.on("message", function(message) {
-  if (message.content.startsWith(prefix + "rps")) {
+  if (message.content.startsWith(prefix + "/rps")) {
     let messageArgs = message.content
       .split(" ")
       .slice(1)
