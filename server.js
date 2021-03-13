@@ -36,15 +36,6 @@ client.on("message", async message => {
   }
 });
 
-//--mute-role--//
-
-$nomention
-$title[mute Mute Create Role]
-$description[$username successfully made muted role!
-$createRole[muted;ff0000;no;no]]
-$footer[Bot Made By DSD:crossed_swords:zheko gaming]
-$color[56FFE7]
-$onlyAdmin[You don't have permission]
            
 //invite 
 const { MessageEmbed } = require("discord.js");
