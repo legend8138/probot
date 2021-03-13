@@ -1099,7 +1099,7 @@ client.on("message", message => {
 
 
 
- | [Server Support](${'https://discord.gg/9jyZWX4Fmc'}) | [invite] (${'https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot'})
+ | [Server Support](${'https://discord.gg/9jyZWX4Fmc'})
 `);
     message.channel.sendEmbed(embed);
   }
