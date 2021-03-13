@@ -87,12 +87,6 @@ client.on("message", msg => {
   }
 });
 
-client.on("message", msg => {
-  if (msg.content === "Slaw") {
-    msg.reply("**<@790600594838257696> xoy chwabt adatawa **");
-  }
-});
-
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
