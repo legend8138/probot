@@ -439,7 +439,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} MAN GIFS photos  `,
+          description: `${message.author.username} MAN GIFS   `,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -492,7 +492,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} GIRL `,
+          description: `${message.author.username} GIRL GIFS `,
 
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
@@ -507,7 +507,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/sad gif")) {
+  if (message.content.startsWith(prefix + "/s")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -563,7 +563,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  Love photos  `,
+          description: `${message.author.username} :heart:  LOVE GIFS  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -708,13 +708,13 @@ client.on("message", message => {
         true
       )
       .addField(
-        " 📝|**akawnt Name** :  ",
+        " 📝|**BOT Name** :  ",
         `» ${client.user.tag} `,
         true
       )
       .addField(
-        " 👑|**OWNER AKAWNT** :  ",
-        `» <@790600594838257696>`,
+        " 👑|**OWNER BOT** :  ",
+        `» <@758476332098650152>`,
         true
       ) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
@@ -757,7 +757,7 @@ client.on("message", message => {
           `[ ${client.user.id} ]`,
           true
         )
-        .addField(" ⭕|My Prefix", `[ help ]`, true)
+        .addField(" ⭕|My Prefix", `[ /help ]`, true)
         .setImage(
           "https://cdn.discordapp.com/attachments/738017519981559881/742193131314872382/591025441004060684.gif"
         )
@@ -766,7 +766,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/mv")) {
+  if (message.content.startsWith(prefix + "/mute")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**you don't have mute permission**❌ ")
@@ -812,7 +812,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/unmv")) {
+  if (message.content.startsWith(prefix + "/unmute")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**MUTE MEMBER ببورە ئەو رۆلەت نیە**❌ ")
@@ -943,7 +943,7 @@ client.on("message", message => {
           message.guild.unban(NoNo);
         });
       });
-      return message.channel.send("**✅ Unbanned all members **");
+      return message.channel.send("**✅ Unbaned all member**");
     }
     if (!args)
       return message.channel.send("**Please Type the member ID / all**");
@@ -975,7 +975,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/info invites")) {
+  if (message.content.startsWith(prefix + "/info invite")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author;
       let personalInvites = invs.filter(i => i.inviter.id === user.id);
@@ -986,10 +986,9 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/help") {
-    var addserver = `https://discord.gg/99KsGZHrsv`;
-    var SUPPORT = `https://discord.gg/99KsGZHrsv`;
-    var website = `https://black-bot-html.glitch.me/`;
+  if (message.content === prefix + "/help","/h") {
+    var addserver = `https://discord.gg/n8kXNUG2jn`;
+    var SUPPORT = `https://discord.gg/9jyZWX4Fmc`;
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setThumbnail(message.author.avatarURL)
