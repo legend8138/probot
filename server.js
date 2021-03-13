@@ -388,7 +388,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/")) {
+  if (message.content.startsWith(prefix + "/man")) {
     
     exports.conf = {
 
@@ -438,7 +438,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/G")) {
+  if (message.content.startsWith(prefix + "/girl")) {
     exports.conf = {
 
   enabled: true,
@@ -493,7 +493,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "S")) {
+  if (message.content.startsWith(prefix + "/sad")) {
        exports.conf = {
 
   enabled: true,
@@ -537,7 +537,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/")) {
+  if (message.content.startsWith(prefix + "/couple")) {
            exports.conf = {
 
   enabled: true,
@@ -847,7 +847,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/M")) {
+  if (message.content.startsWith(prefix + "/meme")) {
       
            exports.conf = {
 
@@ -903,7 +903,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/B")) {
+  if (message.content.startsWith(prefix + "/boom")) {
                exports.conf = {
 
   enabled: true,
