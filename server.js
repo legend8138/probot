@@ -1069,6 +1069,10 @@ client.on("message", message => {
 =========================
 🥶| /count
 =========================
+:man_running:| /move {user}
+:earth_asia: | /move all
+=========================
+
  | [ Server Support](${'https://discord.gg/9jyZWX4Fmc'}) |
 `);
     message.channel.sendEmbed(embed);
