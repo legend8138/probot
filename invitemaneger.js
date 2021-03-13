@@ -1,70 +1,11 @@
 
-const express = require("express");
-const app = express();
-const dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
-app.use(express.static("public"));
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
-});
-app.get("/dreams", (request, response) => {
-  response.json(dreams);
-});
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
-
-
-
-const fs = require("fs");
-const Discord = require ("discord.js")
-const moment = require ("moment")
-const client = new Discord.Client();
-const prefix = "j!";
-
-
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.2Re-JmHkZGYsVsA26Wx1Jh4wzxc");
-client.on("ready", async () => {
-  console.log(`Logged in as ${client.user.username}!`);
-  client.user.setStatus("ONLINE");
-
-  client.guilds.cache.forEach(g => {
-    if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
-      g.fetchInvites().then(guildInvites => {});
-    }
-  });
-});
-
-//////////
-
-
-
+////// code invite vr 12 by hell///////
 client.on("message", message => {
   if (message.content === prefix + "/invite") {
     if (!message.channel.guild)
       return message.reply(
         "Please Do not type bot commands in bot private chat"
       );
-    let embed = new Discord.MessageEmbed()
-      .setColor("GREEN")
-      .setTitle("=--><a:jano_10:799629559217389608> <a:jano_24:799630717507862558> click touch for link bot <a:jano_24:799630717507862558> <a:jano_10:799629559217389608><--=")
-      .setURL(
-        "https://discord.com/api/oauth2/authorize?client_id=799228179784794183&permissions=8&scope=bot"
-      );
-    message.channel.send(embed);
-     message.react("<a:jano_27:799630916820795422>");
-  }
-});
-
-///////
-
-
-
-
-////// code invite vr 12 by hell///////
 const invites = {};
 const wait = require("util").promisify(setTimeout);
 client.on("ready", () => {
