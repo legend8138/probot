@@ -58,7 +58,7 @@ client.on("message", message => {
       );
       break;
 
-    case "<@790600594838257696>":
+    case "<@758476332098650152>":
       message.channel.send("فــەرمـــوو    ");
   }
 });
@@ -71,7 +71,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Reklam") {
-    msg.reply("** farmw  https://discord.gg/n8kXNUG2jn**");
+    msg.reply("** la zutren kat jwabt adretawa dlm **");
   }
 });
 
