@@ -688,8 +688,8 @@ client.on("message", message => {
         true
       )
       .addField(
-        " 👑|**OWNER AKAWNT** :  ",
-        `» <@790600594838257696>`,
+        " 👑|**OWNER BOT** :  ",
+        `» <@758476332098650152>`,
         true
       ) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
@@ -701,7 +701,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "info")) {
+  if (message.content.startsWith(prefix + "/info")) {
     message.channel.send({
       embed: new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
@@ -732,7 +732,7 @@ client.on("message", message => {
           `[ ${client.user.id} ]`,
           true
         )
-        .addField(" ⭕|My Prefix", `[ help ]`, true)
+        .addField(" ⭕|My Prefix", `[ /help ]`, true)
         .setImage(
           "https://cdn.discordapp.com/attachments/738017519981559881/742193131314872382/591025441004060684.gif"
         )
@@ -741,7 +741,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "mv")) {
+  if (message.content.startsWith(prefix + "/move")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
@@ -766,7 +766,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "rooms") {
+  if (message.content === prefix + "/rooms") {
     var channels = message.guild.channels
       .map(channels => `${channels.name}, `)
       .join(" ");
@@ -787,7 +787,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "unmv")) {
+  if (message.content.startsWith(prefix + "/unmute")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**MUTE MEMBER ببورە ئەو رۆلەت نیە**❌ ")
@@ -812,7 +812,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "meme")) {
+  if (message.content.startsWith(prefix + "/meme")) {
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -856,7 +856,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "boom")) {
+  if (message.content.startsWith(prefix + "/boom")) {
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -906,7 +906,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "unban") {
+  if (command == prefix + "/unban") {
     if (!message.member.hasPermission("BAN_MEMBERS")) return;
     let args = message.content
       .split(" ")
@@ -936,7 +936,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "info roles") {
+  if (message.content === prefix + "/info roles") {
     if (!message.channel.guild) return;
     var roles = message.guild.roles.map(roles => `${roles.name}, `).join(" ");
     const embed = new Discord.RichEmbed()
@@ -950,7 +950,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "info invites")) {
+  if (message.content.startsWith(prefix + "/info invites")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author;
       let personalInvites = invs.filter(i => i.inviter.id === user.id);
@@ -961,10 +961,9 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "help") {
-    var addserver = `https://discord.gg/99KsGZHrsv`;
-    var SUPPORT = `https://discord.gg/99KsGZHrsv`;
-    var website = `https://black-bot-html.glitch.me/`;
+  if (message.content === prefix + "/help") {
+    var addserver = `https://discord.gg/n8kXNUG2jn`;
+    var SUPPORT = `https://discord.gg/9jyZWX4Fmc`;
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setThumbnail(message.author.avatarURL)
@@ -1012,14 +1011,14 @@ client.on("message", message => {
 =========================
 🥶|count
 =========================
- | [ Server Support](${SUPPORT}) |
+ | [ Server Support](${'https://discord.gg/9jyZWX4Fmc;'}) |
 `);
     message.channel.sendEmbed(embed);
   }
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "sad gif")) {
+  if (message.content.startsWith(prefix + "/sad gif")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -1051,7 +1050,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "deafen")) {
+  if (message.content.startsWith(prefix + "/deafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1083,7 +1082,7 @@ client.on("message", message => {
 });
 
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "undeafen")) {
+  if (message.content.startsWith(prefix + "/undeafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1116,7 +1115,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "avatar")) {
+  if (message.content.startsWith(prefix + "/avatar")) {
     if (!message.channel.guild) return;
     var mentionned = message.mentions.users.first();
     var client;
@@ -1137,7 +1136,7 @@ client.on("message", message => {
 client.on("message", message => {
   //Black jack
   if (!message.channel.guild) return;
-  if (message.content == prefix + "count")
+  if (message.content == prefix + "/count")
     //Black jack
     var Black = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
@@ -1149,7 +1148,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "date") {
+  if (message.content === prefix + "/date") {
     if (!message.channel.guild) return;
     var currentTime = new Date(),
       hours = currentTime.getHours() + 4,
@@ -1204,7 +1203,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "ban")) {
+  if (message.content.startsWith(prefix + "/ban")) {
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel
         .send(" **you need the** ``BAN MEMBER`` **permission!**")
