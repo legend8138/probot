@@ -98,7 +98,6 @@ client.on("message", message => {
   if (!message.channel.guild) return;
   if (message.content.startsWith(prefix + "/move")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
-      if (message.member.hasPermission("ADMINISTRATOR")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
           "``To use the command type this command <a:emoji_23:799005021303210024>: " +
@@ -149,7 +148,6 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS")) {
-       if (!message.member.hasPermission("ADMINISTRATOR")){
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
       return message.reply("**:x: I Dont Have Perms `MOVE_MEMBERS`**");
