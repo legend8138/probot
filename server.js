@@ -507,20 +507,9 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/s")) {
-     exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif sad','sad gif','gifsad','sadgif','sad','Sad'],
-
-  permLevel: 0
-
-};
+  if (message.content.startsWith(prefix + "sad gif")) {
     let sads = [
-   "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435254011920404/a_caf4fdc4f3e516fcabec0022078c38ab.gif",
       "https://media.discordapp.net/attachments/786897045952790550/804040753072439326/038842117446a0c76a922d23727942b1.gif",
