@@ -20,6 +20,17 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   if (message.content.toLowerCase() === prefix + "/p") {
+               exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['P','profile','pro','Pro','Profile',],
+
+  permLevel: 0
+
+};
     message.channel.startTyping();
     setTimeout(() => {
       message.channel.stopTyping();
@@ -489,7 +500,7 @@ client.on("message", message => {
 
   guildOnly: false,
 
-  aliases: ['gif sad','sad gif','gifsad','sadgif','sad','Sad'],
+  aliases: ['gif sad','gifsad','sadgif','sad','Sad'],
 
   permLevel: 0
 
@@ -630,7 +641,7 @@ client.on("message", function(message) {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "nick")) {
+  if (message.content.startsWith(prefix + "/nick")) {
     if (!message.guild.member(message.author).hasPermission("MANAGE_NICKNAMES"))
       return message.channel.send("Please Check Your Permission.");
     if (!message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES"))
@@ -687,7 +698,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "about") {
+  if (command == prefix + "/about") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
       .setColor("RANDOM")
@@ -836,7 +847,19 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/meme")) {
+  if (message.content.startsWith(prefix + "/M")) {
+      
+           exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif meme','meme gif','gifmeme','memegif','meme','Meme'],
+
+  permLevel: 0
+
+};
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -880,7 +903,18 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/boom")) {
+  if (message.content.startsWith(prefix + "/B")) {
+               exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif boom','boom gif','gifboom','boomgif','boom','Boom'],
+
+  permLevel: 0
+
+};
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -1028,14 +1062,14 @@ client.on("message", message => {
 🦄| /girl gif
 =========================
 💔| /sad gif
-❤| /love gif
+❤| /couple
 =========================
 🔕| /deafend
 🔉| /undeafend
 =========================
 🥶| /count
 =========================
- | [ Server Support](${'https://discord.gg/9jyZWX4Fmc;'}) |
+ | [ Server Support](${'https://discord.gg/9jyZWX4Fmc'}) |
 `);
     message.channel.sendEmbed(embed);
   }
