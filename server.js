@@ -1047,46 +1047,43 @@ client.on("message", message => {
       .setColor("RANDOM").setDescription(` 
     
 =========================
-🌉| /avatar
+🌉|avatar
 =========================
-🛠| /p
+🛠|p
 =========================
-✔| /info
+🔇|mv
+🔊|unmv
 =========================
-❄| /about
+✔|info
 =========================
-📝| /rooms
+❄|about
 =========================
-🔒| /lock
-🔓| /unlock
+📝|rooms
 =========================
-💎| /id
+🔒|lock
+🔓|unlock
 =========================
-🛫| /ban
-🛬| /unban
+💎|id
 =========================
-🕐| /date
+🛫|ban
+🛬|unban
 =========================
-😅| /meme
-🎴| /boomb
+🕐|date
 =========================
-🌝| /man gif
-🦄| /girl gif
+😅|meme
+🎴|boomb
 =========================
-💔| /sad gif
-❤| /love gif
+🌝|man gif
+🦄|girl gif
 =========================
-🔕| /deafend
-🔉| /undeafend
+💔|sad gif
+❤|love gif
 =========================
-🔇| /mute
-🔊| /unmute
+🔕|deafend
+🔉|undeafend
 =========================
-🥶| /count
+🥶|count
 =========================
-
-
- 
  | [ Server Support](${SUPPORT}) |
 `);
     message.channel.sendEmbed(embed);
@@ -1125,9 +1122,8 @@ client.on("message", message => {
   }
 });
 
-
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/deafen")) {
+  if (message.content.startsWith(prefix + "deafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1145,7 +1141,7 @@ client.on("message", message => {
       member.setDeaf(true).catch(console.error);
       if (!message.member.hasPermission("DEAFEN_MEMBERS"))
         return message.channel
-          .sendMessage("**You can't DEAFEN_MEMBER**❌ ")
+          .sendMessage("**You dont have DEAFEN_MEMBER**❌ ")
           .then(m => m.delete(5000));
     };
 
@@ -1159,7 +1155,7 @@ client.on("message", message => {
 });
 
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "/undeafen")) {
+  if (message.content.startsWith(prefix + "undeafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1192,7 +1188,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/avatar")) {
+  if (message.content.startsWith(prefix + "avatar")) {
     if (!message.channel.guild) return;
     var mentionned = message.mentions.users.first();
     var client;
@@ -1213,7 +1209,7 @@ client.on("message", message => {
 client.on("message", message => {
   //Black jack
   if (!message.channel.guild) return;
-  if (message.content == prefix + "/count")
+  if (message.content == prefix + "count")
     //Black jack
     var Black = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
@@ -1225,7 +1221,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/date") {
+  if (message.content === prefix + "date") {
     if (!message.channel.guild) return;
     var currentTime = new Date(),
       hours = currentTime.getHours() + 4,
@@ -1280,7 +1276,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/ban")) {
+  if (message.content.startsWith(prefix + "ban")) {
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel
         .send(" **you need the** ``BAN MEMBER`` **permission!**")
@@ -1317,8 +1313,6 @@ client.on("message", message => {
       });
   }
 });
-
-
 
 // Events
 
