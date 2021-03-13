@@ -388,7 +388,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/man" , "/Man")) {
+  if (message.content.startsWith(prefix + "/")) {
     
     exports.conf = {
 
@@ -537,7 +537,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "C")) {
+  if (message.content.startsWith(prefix + "/")) {
            exports.conf = {
 
   enabled: true,
