@@ -986,7 +986,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/help","/h") {
+  if (message.content === prefix + "/help") {
     var addserver = `https://discord.gg/n8kXNUG2jn`;
     var SUPPORT = `https://discord.gg/9jyZWX4Fmc`;
     let embed = new Discord.RichEmbed()
