@@ -17,9 +17,9 @@ client.on("ready", () => {
     });
   }, 2000);
 });
-  
+
 client.on("message", async message => {
-  if (message.content.toLowerCase() === prefix + "/profile") {
+  if (message.content.toLowerCase() === prefix + "p") {
     message.channel.startTyping();
     setTimeout(() => {
       message.channel.stopTyping();
@@ -36,31 +36,6 @@ client.on("message", async message => {
   }
 });
 
-//invite 
-const { MessageEmbed } = require("discord.js");
-
-module.exports = {
-  name: "invite",
-  aliases: ["inv"],
-  description: "Invite the bot to your server.",
-  execute(message) {
-
-    let inviteEmbed = new MessageEmbed()
-      .setTitle("Add us to your server!")
-      .setDescription("Love using Harmony? Great, Thank you! Consider adding it to your server")
-      .setColor("#F0EAD6")
-      .setAuthor('Harmony','https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif')
-      .setThumbnail(message.guild.iconURL())
-      .addField(`Use the following link to add Harmony to your discord server`, 'https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot', true)
-
-    inviteEmbed.setTimestamp();
-
-    return message.channel.send(inviteEmbed).catch(console.error);
-  }
-};
-
-
-
 client.on("message", message => {
   var command = message.content;
   if (message.author.bot) return;
@@ -72,7 +47,7 @@ client.on("message", message => {
       );
       break;
 
-    case "<@758476332098650152>":
+    case "<@790600594838257696>":
       message.channel.send("فــەرمـــوو    ");
   }
 });
@@ -85,7 +60,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Reklam") {
-    msg.reply("** farmw  https://discord.gg/9jyZWX4Fmc**");
+    msg.reply("** farmw  https://discord.gg/99KsGZHrsv**");
   }
 });
 
@@ -110,7 +85,7 @@ client.on("message", msg => {
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + "/mov")) {
+  if (message.content.startsWith(prefix + "mov")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
@@ -160,7 +135,7 @@ client.on("message", message => {
 
 // ======== { • moveall • }======== //
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/moveall")) {
+  if (message.content.startsWith(prefix + "moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
@@ -179,7 +154,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/emosuuujjilist")) {
+  if (message.content.startsWith(prefix + "emosuuujjilist")) {
     const List = message.guild.emojis.map(e => e.toString()).join(" ");
 
     const EmojiList = new Discord.RichEmbed()
@@ -193,7 +168,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/lock") {
+  if (message.content === prefix + "lock") {
     if (!message.channel.guild) return message.reply(" |Chat Locked  ");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -206,7 +181,7 @@ client.on("message", message => {
         message.reply("  ✅| lock chat ");
       });
   }
-  if (message.content === prefix + "/unlock") {
+  if (message.content === prefix + "unlock") {
     if (!message.channel.guild) return message.reply(" | not server");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -260,7 +235,7 @@ client.on("message", message => {
   }
 });
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "/websay")) {
+  if (message.content.startsWith(prefix + "websay")) {
     const args = message.content.substring(prefix.length).split(" ");
 
     message.delete();
@@ -279,7 +254,7 @@ client.on("message", async message => {
 
 client.on("message", message => {
   if (!message.guild) return;
-  if (message.content === prefix + "/join") {
+  if (message.content === prefix + "join") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
         .join()
@@ -294,7 +269,7 @@ client.on("message", message => {
 });
 
 client.on("message", async msg => {
-  if (msg.content === prefix + "/server") {
+  if (msg.content === prefix + "server") {
     var w1 = msg.guild.createdAt.getFullYear();
     var w2 = msg.guild.createdAt.getMonth();
     var w3 = msg.guild.createdAt.getDate();
@@ -318,7 +293,7 @@ client.on("message", async msg => {
 client.on("message", message => {
   //Turbo Codes
   var args = message.content.split(" ").slice(1); //Turbo Codes
-  if (message.content.startsWith(prefix + "/id")) {
+  if (message.content.startsWith(prefix + "id")) {
     //Turbo Codes
     var year = message.author.createdAt.getFullYear();
     var month = message.author.createdAt.getMonth();
