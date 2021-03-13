@@ -402,7 +402,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/")) {
+  if (message.content.startsWith(prefix + "/m")) {
     
     exports.conf = {
 
@@ -452,7 +452,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/")) {
+  if (message.content.startsWith(prefix + "/m")) {
     exports.conf = {
 
   enabled: true,
