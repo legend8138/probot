@@ -19,7 +19,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async message => {
-  if (message.content.toLowerCase() === prefix + "p") {
+  if (message.content.toLowerCase() === prefix + "/p") {
     message.channel.startTyping();
     setTimeout(() => {
       message.channel.stopTyping();
@@ -60,7 +60,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Reklam") {
-    msg.reply("** farmw  https://discord.gg/99KsGZHrsv**");
+    msg.reply("** farmw  https://discord.gg/n8kXNUG2jn**");
   }
 });
 
@@ -85,13 +85,13 @@ client.on("message", msg => {
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + "mov")) {
+  if (message.content.startsWith(prefix + "/mov")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
           "``To use the command type this command <a:emoji_23:799005021303210024>: " +
             prefix +
-            "move [USER]``"
+            "/move [USER]``"
         );
       }
       if (message.member.voiceChannel != null) {
@@ -135,7 +135,7 @@ client.on("message", message => {
 
 // ======== { • moveall • }======== //
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "moveall")) {
+  if (message.content.startsWith(prefix + "/moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
@@ -154,7 +154,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "emosuuujjilist")) {
+  if (message.content.startsWith(prefix + "/emosuuujjilist")) {
     const List = message.guild.emojis.map(e => e.toString()).join(" ");
 
     const EmojiList = new Discord.RichEmbed()
@@ -168,7 +168,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "lock") {
+  if (message.content === prefix + "/lock") {
     if (!message.channel.guild) return message.reply(" |Chat Locked  ");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -181,7 +181,7 @@ client.on("message", message => {
         message.reply("  ✅| lock chat ");
       });
   }
-  if (message.content === prefix + "unlock") {
+  if (message.content === prefix + "/unlock") {
     if (!message.channel.guild) return message.reply(" | not server");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -235,7 +235,7 @@ client.on("message", message => {
   }
 });
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "websay")) {
+  if (message.content.startsWith(prefix + "/websay")) {
     const args = message.content.substring(prefix.length).split(" ");
 
     message.delete();
@@ -254,7 +254,7 @@ client.on("message", async message => {
 
 client.on("message", message => {
   if (!message.guild) return;
-  if (message.content === prefix + "join") {
+  if (message.content === prefix + "/join") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
         .join()
@@ -269,7 +269,7 @@ client.on("message", message => {
 });
 
 client.on("message", async msg => {
-  if (msg.content === prefix + "server") {
+  if (msg.content === prefix + "/server") {
     var w1 = msg.guild.createdAt.getFullYear();
     var w2 = msg.guild.createdAt.getMonth();
     var w3 = msg.guild.createdAt.getDate();
@@ -293,7 +293,7 @@ client.on("message", async msg => {
 client.on("message", message => {
   //Turbo Codes
   var args = message.content.split(" ").slice(1); //Turbo Codes
-  if (message.content.startsWith(prefix + "id")) {
+  if (message.content.startsWith(prefix + "/id")) {
     //Turbo Codes
     var year = message.author.createdAt.getFullYear();
     var month = message.author.createdAt.getMonth();
