@@ -514,18 +514,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/c")) {
-      exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif couple','couple gif','gifcouple','couplegif','couple','Couple'],
-
-  permLevel: 0
-
-};
+  if (message.content.startsWith(prefix + "love gif")) {
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -549,9 +538,9 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  COUPLE GIFS  `,
+          description: `${message.author.username} :heart:  Love photos  `,
           image: {
-            url: loves[Math.floor(Math.random() * LOVE.length)]
+            url: loves[Math.floor(Math.random() * loves.length)]
           }
         }
       })
@@ -562,7 +551,7 @@ client.on("message", message => {
 });
 
 client.on("message", function(message) {
-  if (message.content.startsWith(prefix + "/rps")) {
+  if (message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content
       .split(" ")
       .slice(1)
@@ -617,7 +606,7 @@ client.on("message", function(message) {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/nick")) {
+  if (message.content.startsWith(prefix + "nick")) {
     if (!message.guild.member(message.author).hasPermission("MANAGE_NICKNAMES"))
       return message.channel.send("Please Check Your Permission.");
     if (!message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES"))
@@ -663,7 +652,7 @@ client.on("message", message => {
         message.channel.send("Error: **" + error.message + "** ");
       });
   }
-  if (message.content.toLowerCase() === prefix + "/help nick") {
+  if (message.content.toLowerCase() === prefix + "help nick") {
     let nick = new Discord.MessageEmbed()
       .setTitle(`Command: nick`)
       .addField("Usage", `${prefix}nick @user nickname`)
@@ -674,7 +663,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "/about") {
+  if (command == prefix + "about") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
       .setColor("RANDOM")
@@ -694,13 +683,13 @@ client.on("message", message => {
         true
       )
       .addField(
-        " 📝|**BOT Name** :  ",
+        " 📝|**akawnt Name** :  ",
         `» ${client.user.tag} `,
         true
       )
       .addField(
-        " 👑|**OWNER BOT** :  ",
-        `» <@758476332098650152>`,
+        " 👑|**OWNER AKAWNT** :  ",
+        `» <@790600594838257696>`,
         true
       ) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
@@ -711,10 +700,8 @@ client.on("message", message => {
   }
 });
 
-
-
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/info")) {
+  if (message.content.startsWith(prefix + "info")) {
     message.channel.send({
       embed: new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
@@ -745,7 +732,7 @@ client.on("message", message => {
           `[ ${client.user.id} ]`,
           true
         )
-        .addField(" ⭕|My Prefix", `[ /help ]`, true)
+        .addField(" ⭕|My Prefix", `[ help ]`, true)
         .setImage(
           "https://cdn.discordapp.com/attachments/738017519981559881/742193131314872382/591025441004060684.gif"
         )
@@ -754,10 +741,10 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/mute")) {
+  if (message.content.startsWith(prefix + "mv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
-        .sendMessage("**you don't have mute permission**❌ ")
+        .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
         .then(m => m.delete(5000));
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
       return message
@@ -779,7 +766,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/rooms") {
+  if (message.content === prefix + "rooms") {
     var channels = message.guild.channels
       .map(channels => `${channels.name}, `)
       .join(" ");
@@ -800,7 +787,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/unmute")) {
+  if (message.content.startsWith(prefix + "unmv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**MUTE MEMBER ببورە ئەو رۆلەت نیە**❌ ")
@@ -825,20 +812,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/m")) {
-     exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif meme','meme gif','gifmeme','memegif','meme','Meme'],
-
-  permLevel: 0
-
-};
-  
-    
+  if (message.content.startsWith(prefix + "meme")) {
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -869,7 +843,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `**${message.author.username} Meme photo :joy:**`,
+          description: `**${message.author.username} Meme photos :joy:**`,
           image: {
             url: meme[Math.floor(Math.random() * meme.length)]
           }
@@ -882,18 +856,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/boom")) {
-     exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif boom','boom gif','gifboom','boomgif','boom','Boom'],
-
-  permLevel: 0
-
-    
+  if (message.content.startsWith(prefix + "boom")) {
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -943,7 +906,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "/unban") {
+  if (command == prefix + "unban") {
     if (!message.member.hasPermission("BAN_MEMBERS")) return;
     let args = message.content
       .split(" ")
@@ -955,7 +918,7 @@ client.on("message", message => {
           message.guild.unban(NoNo);
         });
       });
-      return message.channel.send("**✅ Unbaned all member**");
+      return message.channel.send("**✅ Unbanned all members **");
     }
     if (!args)
       return message.channel.send("**Please Type the member ID / all**");
@@ -973,7 +936,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/info roles") {
+  if (message.content === prefix + "info roles") {
     if (!message.channel.guild) return;
     var roles = message.guild.roles.map(roles => `${roles.name}, `).join(" ");
     const embed = new Discord.RichEmbed()
@@ -987,7 +950,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/info invite")) {
+  if (message.content.startsWith(prefix + "info invites")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author;
       let personalInvites = invs.filter(i => i.inviter.id === user.id);
@@ -998,9 +961,10 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/help") {
-    var addserver = `https://discord.gg/n8kXNUG2jn`;
-    var SUPPORT = `https://discord.gg/9jyZWX4Fmc`;
+  if (message.content === prefix + "help") {
+    var addserver = `https://discord.gg/99KsGZHrsv`;
+    var SUPPORT = `https://discord.gg/99KsGZHrsv`;
+    var website = `https://black-bot-html.glitch.me/`;
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setThumbnail(message.author.avatarURL)
@@ -1280,4 +1244,4 @@ client.on("message", message => {
 
 // Events
 
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.2Re-JmHkZGYsVsA26Wx1Jh4wzxc");
+client.login("ODEzMzIxMjI0OTY4ODYzNzY2.YDNnHA.eumbmj9PxFR31MIzet4-e4sJ4kw");
