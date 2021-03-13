@@ -508,7 +508,30 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/s")) {
+     exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif sad','sad gif','gifsad','sadgif','sad','Sad'],
+
+  permLevel: 0
+
+};
     let sads = [
+      "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/799435254011920404/a_caf4fdc4f3e516fcabec0022078c38ab.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/804040753072439326/038842117446a0c76a922d23727942b1.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/787581071079768074/image0.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/787581004424544256/image0.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/787580974975549450/image0.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/787580943627976704/image0.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/802930927784820766/Cedric_Anime_Gif_81.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
+      "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
+      "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif",
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435254011920404/a_caf4fdc4f3e516fcabec0022078c38ab.gif",
@@ -539,7 +562,18 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/love gif")) {
+  if (message.content.startsWith(prefix + "/c")) {
+      exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif couple','couple gif','gifcouple','couplegif','couple','Couple'],
+
+  permLevel: 0
+
+};
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -563,9 +597,9 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  LOVE GIFS  `,
+          description: `${message.author.username} :heart:  COUPLE GIFS  `,
           image: {
-            url: loves[Math.floor(Math.random() * loves.length)]
+            url: loves[Math.floor(Math.random() * LOVE.length)]
           }
         }
       })
@@ -839,7 +873,20 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/meme")) {
+  if (message.content.startsWith(prefix + "/m")) {
+     exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif meme','meme gif','gifmeme','memegif','meme','Meme'],
+
+  permLevel: 0
+
+};
+  
+    
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -870,7 +917,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `**${message.author.username} Meme photos :joy:**`,
+          description: `**${message.author.username} Meme photo :joy:**`,
           image: {
             url: meme[Math.floor(Math.random() * meme.length)]
           }
@@ -884,6 +931,17 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/boom")) {
+     exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif boom','boom gif','gifboom','boomgif','boom','Boom'],
+
+  permLevel: 0
+
+    
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -1041,44 +1099,12 @@ client.on("message", message => {
 
 
 
- | [Server Support](${'https://discord.gg/9jyZWX4Fmc'}) |
+ | [Server Support](${'https://discord.gg/9jyZWX4Fmc'}) | [invite] (${'https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot'})
 `);
     message.channel.sendEmbed(embed);
   }
 });
 
-
-client.on("message", message => {
-  if (message.content.startsWith(prefix + "/sad gif")) {
-    let sads = [
-      "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/799435254011920404/a_caf4fdc4f3e516fcabec0022078c38ab.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/804040753072439326/038842117446a0c76a922d23727942b1.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/787581071079768074/image0.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/787581004424544256/image0.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/787580974975549450/image0.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/787580943627976704/image0.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/802930927784820766/Cedric_Anime_Gif_81.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
-      "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
-      "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif"
-    ];
-
-    message.channel
-      .send({
-        embed: {
-          description: `${message.author.username} **SAD GIFS**`,
-          image: {
-            url: sads[Math.floor(Math.random() * sads.length)]
-          }
-        }
-      })
-      .catch(e => {
-        client.log.error(e);
-      });
-  }
-});
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/deafen")) {
