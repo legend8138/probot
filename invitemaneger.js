@@ -26,11 +26,11 @@ const client = new Discord.Client();
 const prefix = "j!";
 
 
-client.login("");
+client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.2Re-JmHkZGYsVsA26Wx1Jh4wzxc");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("ONLINE");
-  client.user.setActivity(`j!help`, { type: "WATCHING" });
+
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -42,40 +42,8 @@ client.on("ready", async () => {
 
 
 
-
-
 client.on("message", message => {
-  if (message.content === prefix + "about") {
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`                         
-**[ invite ]**
-**[ click here ](https://discord.com/api/oauth2/authorize?client_id=799228179784794183&permissions=8&scope=bot)** 
-**[ support ]**
-**[ click here ](https://discord.gg/3wykSpqjZq)**`)
-      .setColor("BLACK")
-    
-      .addField("`my name`", `** ${client.user.tag} **`, true)
-
-      .addField("`Server`", `**${client.guilds.cache.size} Server**`, true)
-    
-     .addField("`Usres`",  `**${client.users.cache.size}  Users**`, true)
-    
-    
-     .addField( "`developer bot` ",`<@681553671364018196>`,true)
-
-
-      .setImage("https://cdn.discordapp.com/attachments/696796419595567108/741981480653291570/image0-40.gif"
-      );
-    
-    message.channel.send(embed);
-    message.react("<a:jano_27:799630916820795422>");
-  }
-});
-
-
-
-client.on("message", message => {
-  if (message.content === prefix + "invite") {
+  if (message.content === prefix + "/invite") {
     if (!message.channel.guild)
       return message.reply(
         "Please Do not type bot commands in bot private chat"
@@ -96,7 +64,7 @@ client.on("message", message => {
 
 
 
-////// code invite vr 12 by jano///////
+////// code invite vr 12 by hell///////
 const invites = {};
 const wait = require("util").promisify(setTimeout);
 client.on("ready", () => {
