@@ -598,7 +598,7 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://cdn.discordapp.com/attachments/786897048070520832/820704328892678185/image0.gif",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fthomas-shelby-gifs&psig=AOvVaw3YwHd2Q_oUrAxW0IZ5PJYI&ust=1615830326665000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiP0ZersO8CFQAAAAAdAAAAABAD",
       "",
       "",
       "",
