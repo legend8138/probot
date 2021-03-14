@@ -1027,6 +1027,7 @@ client.on("message", message => {
       .setColor("RANDOM").setDescription(` 
     
 ||MODIRATOR||
+   :point_up: 
 
 =========================
 🌉| /avatar
@@ -1060,7 +1061,9 @@ client.on("message", message => {
 :earth_asia: | /move all
 
 ||GIFS COMMANDS||
+   :point_up: 
 
+=========================
 😅| /meme
 🎴| /boomb
 =========================
