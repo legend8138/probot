@@ -1073,8 +1073,9 @@ client.on("message", message => {
 **[ support ]**
 **[ click here ](https://discord.gg/9jyZWX4Fmc)**`)
     
-message.channel.send({embed});
-}
+ message.channel.sendEmbed(embed);
+  }
+});
 
 
 
