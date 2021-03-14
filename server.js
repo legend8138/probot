@@ -1092,10 +1092,7 @@ module.exports = {
   name: "/invite",
   aliases: ["/inv"],
   description: "Invite the bot to your server.",
-  execute(message) {
-    
- if (message.content.startsWith(prefix + "/info invites")) {
-   
+  execute(message) {   
     let inviteEmbed = new MessageEmbed()
       .setTitle("Add us to your server!")
       .setDescription("Love using Harmony? Great, Thank you! Consider adding it to your server")
