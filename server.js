@@ -598,7 +598,7 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://images.app.goo.gl/NWELRNiAVQg7QDi3A",
+      "https://media1.giphy.com/media/TU76e2JHkPchG/200w.webp?cid=ecf05e47pbo5pmq2no8k6wsqxqvx60gnietg6v22ux3jm5mx&rid=200w.webp",
       "",
       "",
       "",
