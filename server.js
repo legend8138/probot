@@ -26,7 +26,7 @@ module.exports = {
     name: "ascii",
     aliases: ['type'],
     category: "Fun",
-    usage: "ascii <text>",
+    usage: "/ascii <text>",
     description: "Returns provided text in ascii format.",
     run: async (client, message, args) => {
 
