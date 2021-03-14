@@ -1068,11 +1068,14 @@ client.on("message", message => {
 :earth_asia: | /move all
 =========================
 
- | [ Server Support](${'https://discord.gg/9jyZWX4Fmc'}) |
-`);
-    message.channel.sendEmbed(embed);
-  }
-});
+**[ invite ]**
+**[ click here ](https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot)** 
+**[ support ]**
+**[ click here ](https://discord.gg/9jyZWX4Fmc)**`)
+    
+message.channel.send({embed});
+}
+
 
 
 
