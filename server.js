@@ -598,7 +598,7 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://media.discordapp.net/attachments/792035229505945621/811586874183385108/image0.gif",
+      "https://images.app.goo.gl/NWELRNiAVQg7QDi3A",
       "",
       "",
       "",
