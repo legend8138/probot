@@ -1086,9 +1086,11 @@ client.on("message", message => {
 
 
 
-
 const { MessageEmbed } = require("discord.js");
-
+    
+client.on("message", message => {
+  if (message.content === prefix + "/invite") {
+    
 module.exports = {
   name: "invite",
   aliases: ["inv"],
