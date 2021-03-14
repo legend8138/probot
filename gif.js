@@ -15,7 +15,9 @@ client.on("message", message => {
  ```/meme```,```/boomb```,```/man gif```,```couple```,```girl gif```,```sad gif```,
 
 
-
+message.channel.sendEmbed(embed);
+  }
+});
 
 
 
