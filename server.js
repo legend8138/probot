@@ -1097,7 +1097,7 @@ client.on("message", message => {
         "https://cdn.discordapp.com/attachments/796750980469358622/809873763444850698/image0.gif"
       )
       .setColor("RANDOM").setDescription(` 
- ```/meme```,```/boomb```,```/man gif```,```couple```,```girl gif```,```sad gif```,
+ /meme,/boomb,/man gif,couple,girl gif,sad gif,
 
 
 message.channel.sendEmbed(embed);
