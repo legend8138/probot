@@ -12,6 +12,9 @@ client.on("message", message => {
       .setColor("RANDOM").setDescription(` 
 
 
+ ```/meme```,```/boomb```,```/man gif```,```couple```,```girl gif```,```sad gif```,
+
+
 
 
 
