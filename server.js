@@ -24,7 +24,7 @@ const figlet = require("figlet"); // MAKE SURE TO INSTALL FIGLET PACKAGE OR CODE
 
 module.exports = {
     name: "ascii",
-    aliases: ['type'],
+    aliases: [],
     category: "Fun",
     usage: "/ascii <text>",
     description: "Returns provided text in ascii format.",
