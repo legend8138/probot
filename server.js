@@ -1079,7 +1079,7 @@ client.on("message", message => {
       )
       .setColor("RANDOM").setDescription(` 
     
-||MODIRATOR||
+```MODIRATOR```
  :point_up::point_up::point_up::point_up:
 
 =========================
