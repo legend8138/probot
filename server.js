@@ -1026,6 +1026,8 @@ client.on("message", message => {
       )
       .setColor("RANDOM").setDescription(` 
     
+MODIRATOR
+
 =========================
 🌉|avatar
 =========================
@@ -1033,6 +1035,9 @@ client.on("message", message => {
 =========================
 🔇| /mute
 🔊| /unmmute
+=========================
+🔕| /deafend
+🔉| /undeafend
 =========================
 ✔| /info
 =========================
@@ -1049,7 +1054,13 @@ client.on("message", message => {
 🛬| /unban
 =========================
 🕐| /date
+🥶| /count
 =========================
+:man_running:| /move {user}
+:earth_asia: | /move all
+
+GIFS
+
 😅| /meme
 🎴| /boomb
 =========================
@@ -1058,15 +1069,7 @@ client.on("message", message => {
 =========================
 💔| /sad gif
 ❤| /couple
-=========================
-🔕| /deafend
-🔉| /undeafend
-=========================
-🥶| /count
-=========================
-:man_running:| /move {user}
-:earth_asia: | /move all
-=========================
+
 
 **[ invite ]**
 **[ click here ](https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot)** 
