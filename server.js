@@ -1087,9 +1087,12 @@ client.on("message", message => {
 
 
 const { MessageEmbed } = require("discord.js");
-    
-client.on("message", message => {
-  if (message.content === prefix + "/invite") {
+
+module.exports = {
+  name: "/invite",
+  aliases: ["/inv"],
+  description: "Invite the bot to your server.",
+  execute(message) {
 
     let inviteEmbed = new MessageEmbed()
       .setTitle("Add us to your server!")
