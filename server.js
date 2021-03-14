@@ -1026,12 +1026,12 @@ client.on("message", message => {
       )
       .setColor("RANDOM").setDescription(` 
     
-MODIRATOR
+||MODIRATOR||
 
 =========================
-🌉|avatar
+🌉| /avatar
 =========================
-🛠|p
+🛠| /p
 =========================
 🔇| /mute
 🔊| /unmmute
@@ -1059,7 +1059,7 @@ MODIRATOR
 :man_running:| /move {user}
 :earth_asia: | /move all
 
-GIFS
+||GIFS COMMANDS||
 
 😅| /meme
 🎴| /boomb
