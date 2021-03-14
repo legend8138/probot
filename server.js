@@ -582,23 +582,39 @@ client.on("message", message => {
   }
 });
 
+
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/tomas shelbi")) {
+  if (message.content.startsWith(prefix + "/tomas")) {
            exports.conf = {
 
   enabled: true,
 
   guildOnly: false,
 
-  aliases: ['gif tomas shelbi','tomas shelbi gif','giftomas shelbi','tomas shelbigif','couple',''],
+  aliases: ['','','','','',''],
 
   permLevel: 0
 
 };
    
     let loves = [
-      "https://images-ext-2.discordapp.net/external/Q2Wd-Mm6-mcKspkBZ8LJH2XO1VB4fbWCJM77f9Pmz0Y/https/media.discordapp.net/attachments/792035229505945621/811585845017444372/image0.gif",
-
+      "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782284851570147358/image0-1-4.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782406047473467422/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782148760997593098/a_8bc52b6080ce3079988c6e49f84c4b03.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782445443665625128/ezgif-7-2032ed99845d.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/782196955488321556/a_637b8e2042d540a1e5e28282e3fe5cc7.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803307812608409600/image0.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803869330005688340/a_130ce69bc8c1f06d917ee668f7051b64.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803869344266321931/dans4.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803869587988152340/gif.13.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803869653641854996/20210105_223539.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/803869660814376960/a_09fbaba0301c6db194af2f0c6d2a6a93.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/804188805204410378/2.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
     ];
 
     message.channel
@@ -615,6 +631,7 @@ client.on("message", message => {
       });
   }
 });
+
 
 client.on("message", function(message) {
   if (message.content.startsWith(prefix + "/rps")) {
