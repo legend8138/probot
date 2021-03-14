@@ -598,23 +598,8 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782284851570147358/image0-1-4.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782406047473467422/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782148760997593098/a_8bc52b6080ce3079988c6e49f84c4b03.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782445443665625128/ezgif-7-2032ed99845d.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/782196955488321556/a_637b8e2042d540a1e5e28282e3fe5cc7.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803307812608409600/image0.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803869330005688340/a_130ce69bc8c1f06d917ee668f7051b64.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803869344266321931/dans4.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803869587988152340/gif.13.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803869653641854996/20210105_223539.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/803869660814376960/a_09fbaba0301c6db194af2f0c6d2a6a93.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804188805204410378/2.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fweheartit.com%2Fentry%2F343850252&psig=AOvVaw25_pjpeoZBjbmhitZ1hBJ3&ust=1615834512868000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDcwOW6sO8CFQAAAAAdAAAAABAD",
+
     ];
 
     message.channel
