@@ -582,7 +582,6 @@ client.on("message", message => {
   }
 });
 
-
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/tomas shelbi")) {
            exports.conf = {
@@ -597,15 +596,15 @@ client.on("message", message => {
 
 };
    
-    let loves  = [
-      "https://media.discordapp.net/attachments/792035229505945621/811585845017444372/image0.gif",
+    let loves = [
+      "https://images-ext-2.discordapp.net/external/Q2Wd-Mm6-mcKspkBZ8LJH2XO1VB4fbWCJM77f9Pmz0Y/https/media.discordapp.net/attachments/792035229505945621/811585845017444372/image0.gif",
 
     ];
 
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} TOMAS SHELBI GIF  `,
+          description: `${message.author.username} :heart:  COUPLE GIF  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -616,7 +615,6 @@ client.on("message", message => {
       });
   }
 });
-
 
 client.on("message", function(message) {
   if (message.content.startsWith(prefix + "/rps")) {
