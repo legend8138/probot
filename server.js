@@ -414,6 +414,8 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif",
+      "https://media4.giphy.com/media/WrBSHRLE9gEgM/giphy.webp?cid=ecf05e47b3fkaz5c1z5g7290iecvazsw39eag2jn10st6o7i&rid=giphy.webp",
+      "https://media3.giphy.com/media/Xmq5tTWRdwqXu/giphy.webp?cid=ecf05e476rg2x32a9mjpctlvw6icds1kfvegwaowgwukcxee&rid=giphy.webp",
       "",
     ];
 
@@ -579,6 +581,57 @@ client.on("message", message => {
       });
   }
 });
+
+
+client.on("message", message => {
+  if (message.content.startsWith(prefix + "/tomas shelbi")) {
+           exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ['gif tomas shelbi','tomas shelbi gif','giftomas shelbi','tomas shelbigif','couple',''],
+
+  permLevel: 0
+
+};
+   
+    let loves = [
+      "https://cdn.discordapp.com/attachments/786897048070520832/820704328892678185/image0.gif",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} TOMAS SHELBI GIF  `,
+          image: {
+            url: loves[Math.floor(Math.random() * loves.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 
 client.on("message", function(message) {
   if (message.content.startsWith(prefix + "/rps")) {
