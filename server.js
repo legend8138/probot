@@ -1048,7 +1048,8 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045952790550/802930927784820766/Cedric_Anime_Gif_81.gif",
       "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
       "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
-      "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif"
+      "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif",
+      
     ];
 
     message.channel
@@ -1065,6 +1066,31 @@ client.on("message", message => {
       });
   }
 });
+
+
+client.on("message", message => {
+  if (message.content.startsWith(prefix + "/mrrobot")) {
+    let robot = [
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F299630181460782536%2F&psig=AOvVaw1f1lgbH-4qohIqWIiIJ5zS&ust=1615890129733000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCTtPyJsu8CFQAAAAAdAAAAABAD",
+
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} **MR ROBOT GIFS**`,
+          image: {
+            url: robot[Math.floor(Math.random() * robot.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/deafen")) {
@@ -1260,4 +1286,4 @@ client.on("message", message => {
 
 // Events
 
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.uaDgs-wdJjvXz9PqYTJH6z-m2GI");
+client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.plvGnlNwt577BAYQ1rBijXzKkLk");
