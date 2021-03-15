@@ -1069,9 +1069,9 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/mrrobot")) {
+  if (message.content.startsWith(prefix + "/mr robot")) {
     let robot = [
-      "https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
+      "",
 
     ];
 
