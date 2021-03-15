@@ -380,7 +380,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/boy")) {
     let boy = [
- "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
+      "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870817351368734/5-2.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804007829010513966/image1.gif",
@@ -396,7 +396,6 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif",
      "https://media.discordapp.net/attachments/786897044483604490/819422297970311178/image3.gif",
-      "https://images-ext-1.discordapp.net/external/EUElqU2lXZbNO3jUpXznQDHEkwGx7NY0vxCxU0IV4dM/https/media.discordapp.net/attachments/786897044483604490/819422304151928882/image1.gif",
       "https://media.discordapp.net/attachments/786897044483604490/819422297097371648/image1.gif",
       "https://media.discordapp.net/attachments/786897044483604490/819313319268712458/image0.gif",
       "https://media.discordapp.net/attachments/786897044483604490/819226426342637608/image2.gif",
