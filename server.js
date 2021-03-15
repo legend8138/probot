@@ -524,6 +524,29 @@ client.on("message", message => {
 
 
 client.on("message", message => {
+  if (message.content.startsWith(prefix + "/mr robot")) {
+    let loves = [
+      "https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
+     
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} :heart:  COUPLE GIF  `,
+          image: {
+            url: loves[Math.floor(Math.random() * loves.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+
+client.on("message", message => {
   if (message.content.startsWith(prefix + "/anime")) {
     let loves = [
 "https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
