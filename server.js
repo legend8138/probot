@@ -23,7 +23,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async message => {
-  if (message.content.toLowerCase() === prefix + "p") {
+  if (message.content.toLowerCase() === prefix + "/p") {
     message.channel.startTyping();
     setTimeout(() => {
       message.channel.stopTyping();
@@ -82,14 +82,14 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Slaw") {
-    msg.reply("**<@790600594838257696> xoy chwabt adatawa **");
+    msg.reply("**xoy chwabt adatawa **");
   }
 });
 
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + "mov")) {
+  if (message.content.startsWith(prefix + "/move")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
@@ -139,7 +139,7 @@ client.on("message", message => {
 
 // ======== { • moveall • }======== //
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "moveall")) {
+  if (message.content.startsWith(prefix + "/moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
@@ -172,7 +172,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "lock") {
+  if (message.content === prefix + "/lock") {
     if (!message.channel.guild) return message.reply(" |Chat Locked  ");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -185,7 +185,7 @@ client.on("message", message => {
         message.reply("  ✅| lock chat ");
       });
   }
-  if (message.content === prefix + "unlock") {
+  if (message.content === prefix + "/unlock") {
     if (!message.channel.guild) return message.reply(" | not server");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -239,7 +239,7 @@ client.on("message", message => {
   }
 });
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "websay")) {
+  if (message.content.startsWith(prefix + "/websay")) {
     const args = message.content.substring(prefix.length).split(" ");
 
     message.delete();
@@ -258,7 +258,7 @@ client.on("message", async message => {
 
 client.on("message", message => {
   if (!message.guild) return;
-  if (message.content === prefix + "join") {
+  if (message.content === prefix + "/join") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
         .join()
@@ -273,7 +273,7 @@ client.on("message", message => {
 });
 
 client.on("message", async msg => {
-  if (msg.content === prefix + "server") {
+  if (msg.content === prefix + "/server") {
     var w1 = msg.guild.createdAt.getFullYear();
     var w2 = msg.guild.createdAt.getMonth();
     var w3 = msg.guild.createdAt.getDate();
@@ -297,7 +297,7 @@ client.on("message", async msg => {
 client.on("message", message => {
   //Turbo Codes
   var args = message.content.split(" ").slice(1); //Turbo Codes
-  if (message.content.startsWith(prefix + "id")) {
+  if (message.content.startsWith(prefix + "/id")) {
     //Turbo Codes
     var year = message.author.createdAt.getFullYear();
     var month = message.author.createdAt.getMonth();
@@ -381,7 +381,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "man gif")) {
+  if (message.content.startsWith(prefix + "/man")) {
     let man = [
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
@@ -403,7 +403,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} MAN GIFS photos  `,
+          description: `${message.author.username} MAN GIFS  `,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -416,7 +416,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "girl gif")) {
+  if (message.content.startsWith(prefix + "/girl")) {
     let girl = [
       "https://cdn.discordapp.com/attachments/792035229505945621/811585870535852073/image0.gif",
       "https://cdn.discordapp.com/attachments/792035229505945621/811586874183385108/image0.gif",
@@ -457,7 +457,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "sad gif")) {
+  if (message.content.startsWith(prefix + "/sad")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -489,7 +489,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "love gif")) {
+  if (message.content.startsWith(prefix + "/couple")) {
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -513,7 +513,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  Love photos  `,
+          description: `${message.author.username} :heart:  COUPLE GIF  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -526,7 +526,7 @@ client.on("message", message => {
 });
 
 client.on("message", function(message) {
-  if (message.content.startsWith(prefix + "rps")) {
+  if (message.content.startsWith(prefix + "/rps")) {
     let messageArgs = message.content
       .split(" ")
       .slice(1)
@@ -581,7 +581,7 @@ client.on("message", function(message) {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "nick")) {
+  if (message.content.startsWith(prefix + "/nick")) {
     if (!message.guild.member(message.author).hasPermission("MANAGE_NICKNAMES"))
       return message.channel.send("Please Check Your Permission.");
     if (!message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES"))
@@ -627,7 +627,7 @@ client.on("message", message => {
         message.channel.send("Error: **" + error.message + "** ");
       });
   }
-  if (message.content.toLowerCase() === prefix + "help nick") {
+  if (message.content.toLowerCase() === prefix + "/help nick") {
     let nick = new Discord.MessageEmbed()
       .setTitle(`Command: nick`)
       .addField("Usage", `${prefix}nick @user nickname`)
@@ -658,13 +658,13 @@ client.on("message", message => {
         true
       )
       .addField(
-        " 📝|**akawnt Name** :  ",
+        " 📝|**BOT Name** :  ",
         `» ${client.user.tag} `,
         true
       )
       .addField(
-        " 👑|**OWNER AKAWNT** :  ",
-        `» <@790600594838257696>`,
+        " 👑|**OWNER BOT** :  ",
+        `» <@758476332098650152>`,
         true
       ) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
@@ -676,7 +676,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "info")) {
+  if (message.content.startsWith(prefix + "/info")) {
     message.channel.send({
       embed: new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
@@ -716,7 +716,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "mv")) {
+  if (message.content.startsWith(prefix + "/mute")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
@@ -741,7 +741,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "rooms") {
+  if (message.content === prefix + "/rooms") {
     var channels = message.guild.channels
       .map(channels => `${channels.name}, `)
       .join(" ");
@@ -762,7 +762,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "unmv")) {
+  if (message.content.startsWith(prefix + "/unmute")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**MUTE MEMBER ببورە ئەو رۆلەت نیە**❌ ")
@@ -787,7 +787,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "meme")) {
+  if (message.content.startsWith(prefix + "/meme")) {
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -831,7 +831,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "boom")) {
+  if (message.content.startsWith(prefix + "/boom")) {
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -911,7 +911,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "info roles") {
+  if (message.content === prefix + "/info roles") {
     if (!message.channel.guild) return;
     var roles = message.guild.roles.map(roles => `${roles.name}, `).join(" ");
     const embed = new Discord.RichEmbed()
@@ -925,7 +925,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "info invites")) {
+  if (message.content.startsWith(prefix + "/info invites")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author;
       let personalInvites = invs.filter(i => i.inviter.id === user.id);
@@ -936,7 +936,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "help") {
+  if (message.content === prefix + "/help") {
     var addserver = `https://discord.gg/99KsGZHrsv`;
     var SUPPORT = `https://discord.gg/99KsGZHrsv`;
     var website = `https://black-bot-html.glitch.me/`;
@@ -948,14 +948,14 @@ client.on("message", message => {
         "https://cdn.discordapp.com/attachments/796750980469358622/809873763444850698/image0.gif"
       )
       .setColor("RANDOM").setDescription(` 
-    
+|| MODIRATOR  || 
 =========================
 🌉|avatar
 =========================
 🛠|p
 =========================
-🔇|mv
-🔊|unmv
+🔇|mute
+🔊|unmute
 =========================
 ✔|info
 =========================
@@ -971,8 +971,15 @@ client.on("message", message => {
 🛫|ban
 🛬|unban
 =========================
-🕐|date
+🔕|deafend
+🔉|undeafend
 =========================
+🥶|count
+=========================
+🕐|date
+
+  ||GIF||
+
 😅|meme
 🎴|boomb
 =========================
@@ -981,12 +988,7 @@ client.on("message", message => {
 =========================
 💔|sad gif
 ❤|love gif
-=========================
-🔕|deafend
-🔉|undeafend
-=========================
-🥶|count
-=========================
+
 
 
 
@@ -997,7 +999,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "sad gif")) {
+  if (message.content.startsWith(prefix + "/sad")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -1029,7 +1031,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "deafen")) {
+  if (message.content.startsWith(prefix + "/deafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1061,7 +1063,7 @@ client.on("message", message => {
 });
 
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "undeafen")) {
+  if (message.content.startsWith(prefix + "/undeafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1094,7 +1096,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "avatar")) {
+  if (message.content.startsWith(prefix + "/avatar")) {
     if (!message.channel.guild) return;
     var mentionned = message.mentions.users.first();
     var client;
@@ -1115,7 +1117,7 @@ client.on("message", message => {
 client.on("message", message => {
   //Black jack
   if (!message.channel.guild) return;
-  if (message.content == prefix + "count")
+  if (message.content == prefix + "/count")
     //Black jack
     var Black = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
@@ -1127,7 +1129,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "date") {
+  if (message.content === prefix + "/date") {
     if (!message.channel.guild) return;
     var currentTime = new Date(),
       hours = currentTime.getHours() + 4,
@@ -1182,7 +1184,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "ban")) {
+  if (message.content.startsWith(prefix + "/ban")) {
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel
         .send(" **you need the** ``BAN MEMBER`` **permission!**")
