@@ -1071,7 +1071,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/mrrobot")) {
     let robot = [
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F299630181460782536%2F&psig=AOvVaw1f1lgbH-4qohIqWIiIJ5zS&ust=1615890129733000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCTtPyJsu8CFQAAAAAdAAAAABAD",
+      "https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
 
     ];
 
