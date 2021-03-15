@@ -6,10 +6,14 @@ client.on("ready", () => {
   console.log(
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
-  let statuses = ['HELL is Here #0304',' /help ','MODIRATOR','GIF']
+  let statuses = ['NAQEB is Here #7574','peryamلەبێگانەیەکەوە بووی بە ھەموو کەسم','ژیانم لە کەسێکدایە',' بوونت بۆمن شانازیە ']
+    
+  
+   
+ 
   ;
 
-setInterval(function() {
+  setInterval(function() {
     let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(STREAMING, {
       type: "STREAMING",
@@ -18,20 +22,8 @@ setInterval(function() {
   }, 2000);
 });
 
-
 client.on("message", async message => {
-  if (message.content.toLowerCase() === prefix + "/p") {
-               exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['P','profile','pro','Pro','Profile',],
-
-  permLevel: 0
-
-};
+  if (message.content.toLowerCase() === prefix + "p") {
     message.channel.startTyping();
     setTimeout(() => {
       message.channel.stopTyping();
@@ -59,7 +51,7 @@ client.on("message", message => {
       );
       break;
 
-    case "<@758476332098650152>":
+    case "<@790600594838257696>":
       message.channel.send("فــەرمـــوو    ");
   }
 });
@@ -72,7 +64,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "Reklam") {
-    msg.reply("** la zutren kat jwabt adretawa dlm **");
+    msg.reply("** farmw  https://discord.gg/99KsGZHrsv**");
   }
 });
 
@@ -88,10 +80,16 @@ client.on("message", msg => {
   }
 });
 
+client.on("message", msg => {
+  if (msg.content === "Slaw") {
+    msg.reply("**<@790600594838257696> xoy chwabt adatawa **");
+  }
+});
+
 // ======== { • move  • }======== //
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + "/move")) {
+  if (message.content.startsWith(prefix + "mov")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
@@ -141,7 +139,7 @@ client.on("message", message => {
 
 // ======== { • moveall • }======== //
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/moveall")) {
+  if (message.content.startsWith(prefix + "moveall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
     if (!message.guild.member(client.user).hasPermission("MOVE_MEMBERS"))
@@ -174,7 +172,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/lock") {
+  if (message.content === prefix + "lock") {
     if (!message.channel.guild) return message.reply(" |Chat Locked  ");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -187,7 +185,7 @@ client.on("message", message => {
         message.reply("  ✅| lock chat ");
       });
   }
-  if (message.content === prefix + "/unlock") {
+  if (message.content === prefix + "unlock") {
     if (!message.channel.guild) return message.reply(" | not server");
 
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
@@ -241,7 +239,7 @@ client.on("message", message => {
   }
 });
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "/websay")) {
+  if (message.content.startsWith(prefix + "websay")) {
     const args = message.content.substring(prefix.length).split(" ");
 
     message.delete();
@@ -260,7 +258,7 @@ client.on("message", async message => {
 
 client.on("message", message => {
   if (!message.guild) return;
-  if (message.content === prefix + "/join") {
+  if (message.content === prefix + "join") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel
         .join()
@@ -275,7 +273,7 @@ client.on("message", message => {
 });
 
 client.on("message", async msg => {
-  if (msg.content === prefix + "/server") {
+  if (msg.content === prefix + "server") {
     var w1 = msg.guild.createdAt.getFullYear();
     var w2 = msg.guild.createdAt.getMonth();
     var w3 = msg.guild.createdAt.getDate();
@@ -299,7 +297,7 @@ client.on("message", async msg => {
 client.on("message", message => {
   //Turbo Codes
   var args = message.content.split(" ").slice(1); //Turbo Codes
-  if (message.content.startsWith(prefix + "/id")) {
+  if (message.content.startsWith(prefix + "id")) {
     //Turbo Codes
     var year = message.author.createdAt.getFullYear();
     var month = message.author.createdAt.getMonth();
@@ -383,22 +381,8 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/man")) {
-    
-    exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif man','man gif','gifman','mangif','man','Man'],
-
-  permLevel: 0
-
-};
-    
+  if (message.content.startsWith(prefix + "man gif")) {
     let man = [
-      "https://media.giphy.com/media/l4pT1r2ayYtPLc0PS/giphy.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870817351368734/5-2.gif",
@@ -413,16 +397,13 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/804760463044640808/ALANIS_MAN_GIF_99.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif",
-      "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif",
-      "https://media4.giphy.com/media/WrBSHRLE9gEgM/giphy.webp?cid=ecf05e47b3fkaz5c1z5g7290iecvazsw39eag2jn10st6o7i&rid=giphy.webp",
-      "https://media3.giphy.com/media/Xmq5tTWRdwqXu/giphy.webp?cid=ecf05e476rg2x32a9mjpctlvw6icds1kfvegwaowgwukcxee&rid=giphy.webp",
-      "https://images-ext-2.discordapp.net/external/5bf2WAvHX4JSienftCqs-GWjf0U9fDauG0Z40DOZWk0/https/media.discordapp.net/attachments/786897044483604490/820837503723896882/image1.gif",
+      "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif"
     ];
 
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} MAN GIFS   `,
+          description: `${message.author.username} MAN GIFS photos  `,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -435,19 +416,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/girl")) {
-    exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif girl','girl gif','gifgirl','girlgif','girl','Girl'],
-
-  permLevel: 0
-
-};
-
+  if (message.content.startsWith(prefix + "girl gif")) {
     let girl = [
       "https://cdn.discordapp.com/attachments/792035229505945621/811585870535852073/image0.gif",
       "https://cdn.discordapp.com/attachments/792035229505945621/811586874183385108/image0.gif",
@@ -469,20 +438,18 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045436366849/804681217022099466/a_3c85d4517fbaf4f750d344820b49c076.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804682936615829504/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804314115601596426/ALANIS_WOMAN_GIF_176.gif",
-      "https://media.discordapp.net/attachments/786897045436366849/804280612227383316/ALANIS_WOMAN_GIF_138.gif",
+      "https://media.discordapp.net/attachments/786897045436366849/804280612227383316/ALANIS_WOMAN_GIF_138.gif"
     ];
 
     message.channel
       .send({
         embed: {
           description: `${message.author.username} GIRL GIFS `,
-
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
         }
       })
-   
       .catch(e => {
         client.log.error(e);
       });
@@ -490,19 +457,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/sad")) {
-       exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif sad','gifsad','sadgif','sad','Sad'],
-
-  permLevel: 0
-
-};
-    
+  if (message.content.startsWith(prefix + "sad gif")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -516,7 +471,6 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
       "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
       "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif"
-      "https://cdn.discordapp.com/attachments/694694884459937862/798547085921353779/Cedric_Anime_Gif_70.gif",
     ];
 
     message.channel
@@ -535,19 +489,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/couple")) {
-           exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif couple','couple gif','gifcouple','couplegif','couple','Couple'],
-
-  permLevel: 0
-
-};
-   
+  if (message.content.startsWith(prefix + "love gif")) {
     let loves = [
       "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
@@ -565,15 +507,13 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/788119246517174362/804188805204410378/2.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif",
-      "https://cdn.discordapp.com/attachments/786897048070520832/820901822754586634/image0-9.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/813672661049802802/r1H42advb.gif",
+      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
     ];
 
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  COUPLE GIF  `,
+          description: `${message.author.username} :heart:  Love photos  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -584,48 +524,9 @@ client.on("message", message => {
       });
   }
 });
-
-
-client.on("message", message => {
-  if (message.content.startsWith(prefix + "/anime")) {
-    let loves = [
-"https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
-"https://cdn.discordapp.com/attachments/815320488342454273/818749496652464168/image0.gif",
- "https://media4.giphy.com/media/kdneDgu9N322A/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
- "https://media0.giphy.com/media/kSbHxUlMNjmzPLXBGH/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
-  "https://media.discordapp.net/attachments/694694884459937862/793464632773574666/oxytyche_anime_75.gif",
-   "https://cdn.discordapp.com/attachments/815320488342454273/816406693285855252/image0.gif",
-   "https://cdn.discordapp.com/attachments/815320488342454273/816405787563393054/image0.gif",
-    "https://cdn.discordapp.com/attachments/815320488342454273/816406705017192478/image0.gif",
-    "https://cdn.discordapp.com/attachments/815320488342454273/816353154135228456/image0.gif",
-      "https://cdn.discordapp.com/attachments/815320488342454273/816353110385098802/image0.gif",
-      "https://cdn.discordapp.com/attachments/694694884459937862/798547085921353779/Cedric_Anime_Gif_70.gif",
-      "https://cdn.discordapp.com/attachments/806591479677321246/820858694572703784/20210307_194043.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/813672661049802802/r1H42advb.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/813672484770807869/image0-15.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/809560919998070784/image0.gif",
-      "https://cdn.discordapp.com/attachments/806591479677321246/808808289303003216/sad-anime-icegif.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/808568841453174784/image0-35.gif",
-    ];
-
-    message.channel
-      .send({
-        embed: {
-          description: `${message.author.username} :heart:  ANIME GIF  `,
-          image: {
-            url: loves[Math.floor(Math.random() * loves.length)]
-          }
-        }
-      })
-      .catch(e => {
-        client.log.error(e);
-      });
-  }
-});
-
 
 client.on("message", function(message) {
-  if (message.content.startsWith(prefix + "/rps")) {
+  if (message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content
       .split(" ")
       .slice(1)
@@ -680,7 +581,7 @@ client.on("message", function(message) {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/nick")) {
+  if (message.content.startsWith(prefix + "nick")) {
     if (!message.guild.member(message.author).hasPermission("MANAGE_NICKNAMES"))
       return message.channel.send("Please Check Your Permission.");
     if (!message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES"))
@@ -737,7 +638,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "/about") {
+  if (command == prefix + "about") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
       .setColor("RANDOM")
@@ -762,8 +663,8 @@ client.on("message", message => {
         true
       )
       .addField(
-        " 👑|**OWNER BOT** :  ",
-        `» <@758476332098650152>`,
+        " 👑|**OWNER AKAWNT** :  ",
+        `» <@790600594838257696>`,
         true
       ) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
@@ -775,7 +676,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/info")) {
+  if (message.content.startsWith(prefix + "info")) {
     message.channel.send({
       embed: new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
@@ -806,7 +707,7 @@ client.on("message", message => {
           `[ ${client.user.id} ]`,
           true
         )
-        .addField(" ⭕|My Prefix", `[ /help ]`, true)
+        .addField(" ⭕|My Prefix", `[ help ]`, true)
         .setImage(
           "https://cdn.discordapp.com/attachments/738017519981559881/742193131314872382/591025441004060684.gif"
         )
@@ -815,7 +716,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/move")) {
+  if (message.content.startsWith(prefix + "mv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
@@ -840,7 +741,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/rooms") {
+  if (message.content === prefix + "rooms") {
     var channels = message.guild.channels
       .map(channels => `${channels.name}, `)
       .join(" ");
@@ -861,7 +762,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/unmute")) {
+  if (message.content.startsWith(prefix + "unmv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
         .sendMessage("**MUTE MEMBER ببورە ئەو رۆلەت نیە**❌ ")
@@ -886,19 +787,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/meme")) {
-      
-           exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif meme','meme gif','gifmeme','memegif','meme','Meme'],
-
-  permLevel: 0
-
-};
+  if (message.content.startsWith(prefix + "meme")) {
     let meme = [
       "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
@@ -942,18 +831,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/boom")) {
-               exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['gif boom','boom gif','gifboom','boomgif','boom','Boom'],
-
-  permLevel: 0
-
-};
+  if (message.content.startsWith(prefix + "boom")) {
     let bombs = [
       "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
       "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
@@ -1003,7 +881,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   let command = message.content.split(" ")[0];
-  if (command == prefix + "/unban") {
+  if (command == prefix + "unban") {
     if (!message.member.hasPermission("BAN_MEMBERS")) return;
     let args = message.content
       .split(" ")
@@ -1033,7 +911,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/info roles") {
+  if (message.content === prefix + "info roles") {
     if (!message.channel.guild) return;
     var roles = message.guild.roles.map(roles => `${roles.name}, `).join(" ");
     const embed = new Discord.RichEmbed()
@@ -1047,7 +925,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/info invites")) {
+  if (message.content.startsWith(prefix + "info invites")) {
     message.guild.fetchInvites().then(invs => {
       let user = message.mentions.users.first() || message.author;
       let personalInvites = invs.filter(i => i.inviter.id === user.id);
@@ -1058,9 +936,10 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/help") {
-    var addserver = `https://discord.gg/n8kXNUG2jn`;
-    var SUPPORT = `https://discord.gg/9jyZWX4Fmc`;
+  if (message.content === prefix + "help") {
+    var addserver = `https://discord.gg/99KsGZHrsv`;
+    var SUPPORT = `https://discord.gg/99KsGZHrsv`;
+    var website = `https://black-bot-html.glitch.me/`;
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setThumbnail(message.author.avatarURL)
@@ -1070,66 +949,55 @@ client.on("message", message => {
       )
       .setColor("RANDOM").setDescription(` 
     
-||MODIRATOR||
- :point_up::point_up::point_up::point_up:
-
 =========================
-🌉| /avatar
+🌉|avatar
 =========================
-🛠| /p
+🛠|p
 =========================
-🔇| /mute
-🔊| /unmmute
+🔇|mv
+🔊|unmv
 =========================
-🔕| /deafend
-🔉| /undeafend
+✔|info
 =========================
-✔| /info
+❄|about
 =========================
-❄| /about
+📝|rooms
 =========================
-📝| /rooms
+🔒|lock
+🔓|unlock
 =========================
-🔒| /lock
-🔓| /unlock
+💎|id
 =========================
-💎| /id
+🛫|ban
+🛬|unban
 =========================
-🛫| /ban
-🛬| /unban
+🕐|date
 =========================
-🕐| /date
-🥶| /count
+😅|meme
+🎴|boomb
 =========================
-:man_running:| /move {user}
-:earth_asia: | /move all
-
-||GIFS COMMANDS||
-  :point_up::point_up::point_up::point_up:
-
+🌝|man gif
+🦄|girl gif
 =========================
-😅| /meme
-🎴| /boomb
+💔|sad gif
+❤|love gif
 =========================
-🌝| /man gif
-🦄| /girl gif
+🔕|deafend
+🔉|undeafend
 =========================
-💔| /sad gif
-❤| /couple
+🥶|count
+=========================
 
 
-**[ invite ]**
-**[ click here ](https://discord.com/api/oauth2/authorize?client_id=733469607175913593&permissions=8&scope=bot)** 
-**[ support ]**
-**[ click here ](https://discord.gg/9jyZWX4Fmc)**`)
-    
- message.channel.sendEmbed(embed);
+
+ | [ Server Support](${SUPPORT}) |
+`);
+    message.channel.sendEmbed(embed);
   }
 });
 
-
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/sad gif")) {
+  if (message.content.startsWith(prefix + "sad gif")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -1161,7 +1029,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/deafen")) {
+  if (message.content.startsWith(prefix + "deafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1193,7 +1061,7 @@ client.on("message", message => {
 });
 
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "/undeafen")) {
+  if (message.content.startsWith(prefix + "undeafen")) {
     if (
       message.mentions.users.size === 0 &&
       message.mentions.roles.size === 0
@@ -1226,7 +1094,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/avatar")) {
+  if (message.content.startsWith(prefix + "avatar")) {
     if (!message.channel.guild) return;
     var mentionned = message.mentions.users.first();
     var client;
@@ -1247,7 +1115,7 @@ client.on("message", message => {
 client.on("message", message => {
   //Black jack
   if (!message.channel.guild) return;
-  if (message.content == prefix + "/count")
+  if (message.content == prefix + "count")
     //Black jack
     var Black = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
@@ -1259,7 +1127,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content === prefix + "/date") {
+  if (message.content === prefix + "date") {
     if (!message.channel.guild) return;
     var currentTime = new Date(),
       hours = currentTime.getHours() + 4,
@@ -1314,7 +1182,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/ban")) {
+  if (message.content.startsWith(prefix + "ban")) {
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel
         .send(" **you need the** ``BAN MEMBER`` **permission!**")
