@@ -7,10 +7,7 @@ client.on("ready", () => {
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
   let statuses = ['HELL is Here #7574','/help','GIF','MODIRATOR']
-    
-  
-   
- 
+
   ;
 
   setInterval(function() {
@@ -524,6 +521,45 @@ client.on("message", message => {
       });
   }
 });
+
+
+client.on("message", message => {
+  if (message.content.startsWith(prefix + "/anime")) {
+    let loves = [
+"https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
+"https://cdn.discordapp.com/attachments/815320488342454273/818749496652464168/image0.gif",
+ "https://media4.giphy.com/media/kdneDgu9N322A/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
+ "https://media0.giphy.com/media/kSbHxUlMNjmzPLXBGH/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
+  "https://media.discordapp.net/attachments/694694884459937862/793464632773574666/oxytyche_anime_75.gif",
+   "https://cdn.discordapp.com/attachments/815320488342454273/816406693285855252/image0.gif",
+   "https://cdn.discordapp.com/attachments/815320488342454273/816405787563393054/image0.gif",
+    "https://cdn.discordapp.com/attachments/815320488342454273/816406705017192478/image0.gif",
+    "https://cdn.discordapp.com/attachments/815320488342454273/816353154135228456/image0.gif",
+      "https://cdn.discordapp.com/attachments/815320488342454273/816353110385098802/image0.gif",
+      "https://cdn.discordapp.com/attachments/694694884459937862/798547085921353779/Cedric_Anime_Gif_70.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/820858694572703784/20210307_194043.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/813672661049802802/r1H42advb.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/813672484770807869/image0-15.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/809560919998070784/image0.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/808808289303003216/sad-anime-icegif.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/808568841453174784/image0-35.gif",
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} :heart:  ANIME GIF  `,
+          image: {
+            url: loves[Math.floor(Math.random() * loves.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 
 client.on("message", function(message) {
   if (message.content.startsWith(prefix + "/rps")) {
