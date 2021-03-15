@@ -540,7 +540,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  COUPLE GIF  `,
+          description: `${message.author.username} MR ROBOT GIF  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
