@@ -527,7 +527,14 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "/mr robot")) {
     let loves = [
       "https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
-     
+     "https://media.giphy.com/media/3oEjHWpiVIOGXT5l9m/giphy.gif",
+      "https://media.giphy.com/media/26BRM3JGiFlhOQkmY/giphy.gif",
+      "https://media.giphy.com/media/JFo3BEQFmK4cU/giphy.gif",
+      "https://media.giphy.com/media/3oEjI7gBSMd2jtZOI8/giphy.gif",
+      "https://media.giphy.com/media/rKydlqfyxtjRS/giphy.gif",
+      "https://media.giphy.com/media/J8t9H4Z7Wp3fq/giphy.gif",
+      "https://media.giphy.com/media/AiDbw1OSisyoE/giphy.gif",
+      "https://media.giphy.com/media/xTiTntsBQI0Zmu9YoE/giphy.gif",
     ];
 
     message.channel
