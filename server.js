@@ -584,7 +584,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "/tomas")) {
+  if (message.content.startsWith(prefix + "/anime")) {
            exports.conf = {
 
   enabled: true,
@@ -598,7 +598,7 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://pin.it/1WszS5l",
+      "https://images-ext-2.discordapp.net/external/5bf2WAvHX4JSienftCqs-GWjf0U9fDauG0Z40DOZWk0/https/media.discordapp.net/attachments/786897044483604490/820837503723896882/image1.gif",
 
     ];
 
