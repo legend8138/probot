@@ -516,6 +516,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
       "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
       "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif"
+      "https://cdn.discordapp.com/attachments/694694884459937862/798547085921353779/Cedric_Anime_Gif_70.gif",
     ];
 
     message.channel
@@ -564,7 +565,9 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/788119246517174362/804188805204410378/2.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
+      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif",
+      "https://cdn.discordapp.com/attachments/786897048070520832/820901822754586634/image0-9.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/813672661049802802/r1H42advb.gif",
     ];
 
     message.channel
@@ -599,8 +602,22 @@ client.on("message", message => {
    
     let loves = [
 "https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
-
-      
+"https://cdn.discordapp.com/attachments/815320488342454273/818749496652464168/image0.gif",
+ "https://media4.giphy.com/media/kdneDgu9N322A/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
+ "https://media0.giphy.com/media/kSbHxUlMNjmzPLXBGH/giphy.gif?cid=e1bb72ffum95xjn3ip0keacal70yz2692e0hjn5j359gzng1&rid=giphy.gif",
+  "https://media.discordapp.net/attachments/694694884459937862/793464632773574666/oxytyche_anime_75.gif",
+   "https://cdn.discordapp.com/attachments/815320488342454273/816406693285855252/image0.gif",
+   "https://cdn.discordapp.com/attachments/815320488342454273/816405787563393054/image0.gif",
+    "https://cdn.discordapp.com/attachments/815320488342454273/816406705017192478/image0.gif",
+    "https://cdn.discordapp.com/attachments/815320488342454273/816353154135228456/image0.gif",
+      "https://cdn.discordapp.com/attachments/815320488342454273/816353110385098802/image0.gif",
+      "https://cdn.discordapp.com/attachments/694694884459937862/798547085921353779/Cedric_Anime_Gif_70.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/820858694572703784/20210307_194043.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/813672661049802802/r1H42advb.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/813672484770807869/image0-15.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/809560919998070784/image0.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/808808289303003216/sad-anime-icegif.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/808568841453174784/image0-35.gif",
     ];
 
     message.channel
