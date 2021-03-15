@@ -416,7 +416,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/803870682479067166/ENES_ACAR_GIF_135.gif",
       "https://media4.giphy.com/media/WrBSHRLE9gEgM/giphy.webp?cid=ecf05e47b3fkaz5c1z5g7290iecvazsw39eag2jn10st6o7i&rid=giphy.webp",
       "https://media3.giphy.com/media/Xmq5tTWRdwqXu/giphy.webp?cid=ecf05e476rg2x32a9mjpctlvw6icds1kfvegwaowgwukcxee&rid=giphy.webp",
-      "",
+      "https://images-ext-2.discordapp.net/external/5bf2WAvHX4JSienftCqs-GWjf0U9fDauG0Z40DOZWk0/https/media.discordapp.net/attachments/786897044483604490/820837503723896882/image1.gif",
     ];
 
     message.channel
@@ -598,8 +598,9 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://images-ext-2.discordapp.net/external/5bf2WAvHX4JSienftCqs-GWjf0U9fDauG0Z40DOZWk0/https/media.discordapp.net/attachments/786897044483604490/820837503723896882/image1.gif",
+"https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
 
+      
     ];
 
     message.channel
