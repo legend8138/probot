@@ -1068,29 +1068,6 @@ client.on("message", message => {
 });
 
 
-client.on("message", message => {
-  if (message.content.startsWith(prefix + "/mr robot")) {
-    let robot = [
-      "",
-
-    ];
-
-    message.channel
-      .send({
-        embed: {
-          description: `${message.author.username} **MR ROBOT GIFS**`,
-          image: {
-            url: robot[Math.floor(Math.random() * robot.length)]
-          }
-        }
-      })
-      .catch(e => {
-        client.log.error(e);
-      });
-  }
-});
-
-
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/deafen")) {
