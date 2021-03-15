@@ -1354,4 +1354,4 @@ client.on("message", message => {
 
 // Events
 
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.f355VaWiJzgZTp-iyuH2tuoPQnw");
+client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.BcC_Wf38qTFioHb_lt_lPXjsc9M");
