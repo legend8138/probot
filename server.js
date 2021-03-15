@@ -469,7 +469,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045436366849/804681217022099466/a_3c85d4517fbaf4f750d344820b49c076.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804682936615829504/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804314115601596426/ALANIS_WOMAN_GIF_176.gif",
-      "https://media.discordapp.net/attachments/786897045436366849/804280612227383316/ALANIS_WOMAN_GIF_138.gif"
+      "https://media.discordapp.net/attachments/786897045436366849/804280612227383316/ALANIS_WOMAN_GIF_138.gif",
     ];
 
     message.channel
@@ -588,18 +588,6 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/anime")) {
-           exports.conf = {
-
-  enabled: true,
-
-  guildOnly: false,
-
-  aliases: ['','','','','',''],
-
-  permLevel: 0
-
-};
-   
     let loves = [
 "https://cdn.discordapp.com/attachments/815320488342454273/818749473068285952/image0.gif",
 "https://cdn.discordapp.com/attachments/815320488342454273/818749496652464168/image0.gif",
@@ -623,7 +611,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} :heart:  COUPLE GIF  `,
+          description: `${message.author.username} :heart:  ANIME GIF  `,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
