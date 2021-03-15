@@ -598,7 +598,7 @@ client.on("message", message => {
 };
    
     let loves = [
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fweheartit.com%2Fentry%2F343850252&psig=AOvVaw25_pjpeoZBjbmhitZ1hBJ3&ust=1615834512868000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDcwOW6sO8CFQAAAAAdAAAAABAD",
+      "https://pin.it/1WszS5l",
 
     ];
 
