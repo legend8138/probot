@@ -380,7 +380,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/boy")) {
     let boy = [
-      "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
+ "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870817351368734/5-2.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804007829010513966/image1.gif",
@@ -533,7 +533,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/couple")) {
     let loves = [
-      "https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
+"https://media.discordapp.net/attachments/608711480346542102/782233713538498600/hit_gif_5.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782284851570147358/image0-1-4.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782406047473467422/image0.gif",
@@ -571,7 +571,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/mr robot")) {
     let loves = [
-      "https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
+"https://media.giphy.com/media/dLolp8dtrYCJi/giphy.gif",
      "https://media.giphy.com/media/3oEjHWpiVIOGXT5l9m/giphy.gif",
       "https://media.giphy.com/media/26BRM3JGiFlhOQkmY/giphy.gif",
       "https://media.giphy.com/media/JFo3BEQFmK4cU/giphy.gif",
@@ -618,7 +618,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/806591479677321246/813672484770807869/image0-15.gif",
       "https://media.discordapp.net/attachments/806591479677321246/809560919998070784/image0.gif",
       "https://cdn.discordapp.com/attachments/806591479677321246/808808289303003216/sad-anime-icegif.gif",
-      "https://media.discordapp.net/attachments/806591479677321246/808568841453174784/image0-35.gif",
+      "https://media.discordapp.net/attachments/806591479677321246/808568841453174784/image0-35.gif", 
     ];
 
     message.channel
@@ -639,7 +639,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/sad")) {
     let sads = [
-      "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
+    "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435254011920404/a_caf4fdc4f3e516fcabec0022078c38ab.gif",
       "https://media.discordapp.net/attachments/786897045952790550/804040753072439326/038842117446a0c76a922d23727942b1.gif",
@@ -672,7 +672,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "/meme")) {
     let meme = [
-      "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
+ "https://media.discordapp.net/attachments/778349612146360381/805361657781944340/FB_IMG_1608729181806.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361657177702420/IMG_20201125_181212.jpg",
       "https://media.discordapp.net/attachments/778349612146360381/805361656954748948/received_310923683551106.jpeg",
       "https://media.discordapp.net/attachments/778349612146360381/805361656698765342/Komede.jpg",
