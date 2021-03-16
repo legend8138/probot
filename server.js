@@ -1308,4 +1308,4 @@ client.on("message", message => {
 
 // Events
 
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.XkUAAWSabwOPUvH7YIkvfAQ5TXw");
+client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.mDkJzHhAHa0yeSRFdPctoVSbBXI");
