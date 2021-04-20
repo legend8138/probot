@@ -1306,6 +1306,4 @@ client.on("message", message => {
   }
 });
 
-// Events
-
-client.login("NzMzNDY5NjA3MTc1OTEzNTkz.XxDmzQ.mDkJzHhAHa0yeSRFdPctoVSbBXI");
+client.login("NzY1ODI3NzcxMzQzNTY4ODk5.YH42ww.pz4pQ5d-fElvCD-0ltUe9Tt5vAo");
